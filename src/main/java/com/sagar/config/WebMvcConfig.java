@@ -10,14 +10,10 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
 
-/**
- * @author Ramesh Fadatare
- */
-
 @Configuration
 @EnableWebMvc
 @ComponentScan(basePackages = {
-    "net.javaguides.springmvc"
+    "com.sagar.config"
 })
 public class WebMvcConfig implements WebMvcConfigurer {
 
