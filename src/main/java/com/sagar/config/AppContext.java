@@ -14,7 +14,7 @@ import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
-@PropertySource("classpath:database.properties")
+@PropertySource("classpath:application.properties")
 @EnableTransactionManagement
 public class AppContext {
 
@@ -26,7 +26,7 @@ public class AppContext {
         LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
         sessionFactory.setDataSource(dataSource());
         sessionFactory.setPackagesToScan(new String[] {
-            "net.javaguides.springmvc.entity"
+            "com.sagar.entity"
         });
         sessionFactory.setHibernateProperties(hibernateProperties());
         return sessionFactory;

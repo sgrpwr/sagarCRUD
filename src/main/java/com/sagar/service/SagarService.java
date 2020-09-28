@@ -1,4 +1,12 @@
 package com.sagar.service;
 
-public class SagarService {
+import com.sagar.entity.Sagar;
+
+import java.util.List;
+
+public interface SagarService {
+
+    public List<Sagar> getCustomers();
+
 }
+
